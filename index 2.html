@@ -1,0 +1,106 @@
+
+<!--optie 1-->
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <style>-->
+<!--        img {-->
+<!--            transition: all 0.5s ease-in-out;-->
+<!--        }-->
+<!--        .divTest{-->
+<!--            transition: all 0.5s ease-in-out;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>HTML DOM Events</h1>-->
+<!--<h2>The onmouseover Event</h2>-->
+
+<!--<label><div><img onmouseover="bigImg(this)" onmouseout="resetImg(this)" border="0" src="./assets/img.png" alt="Smiley" width="32" height="32"></div></label>-->
+<!--<label><div class="divTest" onmouseover="bigImg(this)" onmouseout="resetImg(this)" border="0"></div></label>-->
+<!--<p>text</p>-->
+
+
+<!--<script>-->
+<!--    var timeoutId;-->
+
+<!--    function bigImg(x) {-->
+<!--        clearTimeout(timeoutId);-->
+
+<!--        x.style.height = "150px";-->
+<!--        x.style.width = "150px";-->
+
+<!--    }-->
+
+<!--    function resetImg(x) {-->
+<!--        timeoutId = setTimeout(function() {-->
+<!--            x.style.height = "75px";-->
+<!--            x.style.width = "75px";-->
+<!--        }, 1000);-->
+<!--    }-->
+<!--</script>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+
+<!--optie 2-->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        img {
+            transition: all 0.5s ease-in-out;
+        }
+        .divTest{
+            transition: all 0.7s ease-in-out;
+            width: 32px;
+            height: 32px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+<h1>HTML DOM-gebeurtenissen</h1>
+<h2>Het onmouseover-gebeurtenis</h2>
+
+<div>
+    <img id="imgElement" border="0" src="./assets/img.png" alt="Smiley" width="32" height="32">
+</div>
+<div class="divTest"></div>
+<p>tekst</p>
+
+<script>
+    var timeoutId;
+
+    const imgElement = document.getElementById("imgElement");
+    const divTestElement = document.querySelector(".divTest");
+
+    imgElement.addEventListener("mouseover", function() {
+        clearTimeout(timeoutId);
+
+        this.style.transform = "scale(5.0)";
+    });
+
+    imgElement.addEventListener("mouseout", function() {
+        timeoutId = setTimeout(() => {
+            this.style.transform = "scale(1.0)";
+        }, 50);
+    });
+
+    divTestElement.addEventListener("mouseover", function() {
+        clearTimeout(timeoutId);
+
+        this.style.transform = "scale(5.0)";
+    });
+
+    divTestElement.addEventListener("mouseout", function() {
+        timeoutId = setTimeout(() => {
+            this.style.transform = "scale(1.0)";
+        }, 50);
+    });
+</script>
+
+</body>
+</html>

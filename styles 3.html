@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beoordelingssysteem</title>
+  <style>
+    :root {
+      --rating-text: "Comic Sans MS", sans-serif;
+    }
+    /* Voeg hier je aangepaste stijlen toe */
+
+
+    .beoordelingsknoppen button {
+      background-color: transparent;
+      color: gray;
+      border: none;
+      font-size: 25px;
+      cursor: pointer;
+
+    }
+.data-beoordeling-text{
+font-family:  var(--rating-text);
+
+}
+
+
+    .beoordelingsknoppen button.actief {
+      color: gold; /* Pas aan naar je gewenste kleur voor actieve knoppen */
+    }
+    .beoordelingsknoppen{
+      display: flex;
+      flex-direction: row;
+    }
+
+  </style>
+</head>
+<body>
+<div class="beoordelingsknoppen">
+  <button data-beoordeling="1"><p class="data-beoordeling-text">b&b</p></button>
+  <button data-beoordeling="2"><p class="data-beoordeling-text">b&b</p></button>
+  <button data-beoordeling="3"><p class="data-beoordeling-text">b&b</p></button>
+  <button data-beoordeling="4"><p class="data-beoordeling-text">b&b</p></button>
+  <button data-beoordeling="5"><p class="data-beoordeling-text">b&b</p></button>
+</div>
+
+<script>
+  const beoordelingsknoppen = document.querySelectorAll('.beoordelingsknoppen button');
+  let geselecteerdeBeoordeling = 0;
+
+  function updateBeoordelingsknoppen() {
+    beoordelingsknoppen.forEach((knop) => {
+      const beoordeling = parseInt(knop.dataset.beoordeling);
+      if (beoordeling <= geselecteerdeBeoordeling) {
+        knop.classList.add('actief');
+      } else {
+        knop.classList.remove('actief');
+      }
+    });
+  }
+
+  beoordelingsknoppen.forEach((knop) => {
+    knop.addEventListener('click', () => {
+      geselecteerdeBeoordeling = parseInt(knop.dataset.beoordeling);
+      updateBeoordelingsknoppen();
+      // Voer eventuele extra acties uit op basis van de geselecteerde beoordeling
+    });
+  });
+</script>
+</body>
+</html>

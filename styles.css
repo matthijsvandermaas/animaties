@@ -1,0 +1,38 @@
+/*star ratings*/
+body {
+    background: #eee;
+}
+
+:root {
+    --opacity: 50%;
+}
+
+.stars {
+    margin: 0;
+    width: 40px;
+    padding: 0;
+    display: flex;
+}
+.stars.disabled {
+    /*pointer-events: none;*/
+}
+
+.stars a {
+    opacity: var(--opacity);
+    padding: 5px;
+}
+
+.stars:hover a {
+    opacity: 100%;
+    cursor: pointer;
+}
+.stars:checked a {
+    opacity: 100%;
+    cursor: pointer;
+}
+.stars a:hover ~ a {
+    opacity: var(--opacity);
+}
+.stars:visited ~ a{
+    opacity: 100%;
+}

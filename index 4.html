@@ -1,0 +1,689 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      /*background: repeating-radial-gradient(ellipse farthest-corner at center center, transparent 99%, rgba(0, 0, 0, 0.02) 100%, transparent 99%);*/
+    }
+
+    .wave{
+      height: 50vw;
+      width: 100vw;
+      transform-style: preserve-3d;
+      transform: perspective(40vw) rotateX(0deg);
+    }
+
+    .wave span {
+      position: absolute;
+      display: block;
+      border: 60px solid transparent;
+      background: repeating-radial-gradient(ellipse farthest-corner at center center, transparent 99%, rgba(256, 256, 256, 0.12) 100%, transparent 99%);
+      border-image-slice: 10;
+      border-radius: 30%;
+      box-shadow:  inset 0 2px 0 rgba(202, 202, 202, 0.12), 0 2px 0 rgba(202, 202, 202, 0.12), inset 0 2px 0 rgba(202, 202, 202, 0.12), 0 2px 0 rgba(202, 202, 202, 0.12);
+      animation: animate 5s ease-in-out infinite;
+      filter: blur(1px);
+    }
+
+
+
+    @keyframes animate {
+      0%,100%{
+        transform:translateZ(100px);
+      }
+      50%{
+        transform: translateZ(-100px);
+      }
+    }
+    .wave span:nth-child(1){
+      right: 15px;
+      left: 15px;
+      top: 15px;
+      bottom: 15px;
+      animation-delay: 1.6s;
+    }
+    .wave span:nth-child(2){
+      right: 10px;
+      left: 10px;
+      top: 10px;
+      bottom: 10px;
+      animation-delay: 1.5s;
+    }
+    .wave span:nth-child(3){
+      right: 20px;
+      left: 20px;
+      top: 20px;
+      bottom: 20px;
+      animation-delay: 1.4s;
+    }
+    .wave span:nth-child(4){
+      right: 30px;
+      left: 30px;
+      top: 30px;
+      bottom: 30px;
+      animation-delay: 1.3s;
+    }
+    .wave span:nth-child(5){
+      right: 40px;
+      left: 40px;
+      top: 40px;
+      bottom: 40px;
+      animation-delay: 1.2s;
+    }
+    .wave span:nth-child(6){
+      right: 50px;
+      left: 50px;
+      top: 50px;
+      bottom: 50px;
+      animation-delay: 1.1s;
+    }
+    .wave span:nth-child(7){
+      right: 60px;
+      left: 60px;
+      top: 60px;
+      bottom: 60px;
+      animation-delay: 1s;
+    }
+    .wave span:nth-child(8){
+      right: 70px;
+      left: 70px;
+      top: 70px;
+      bottom: 70px;
+      animation-delay: 0.9s;
+    }
+    .wave span:nth-child(9){
+      right: 80px;
+      left: 80px;
+      top: 80px;
+      bottom: 80px;
+      animation-delay: 0.8s;
+    }
+    .wave span:nth-child(10){
+      right: 90px;
+      left: 90px;
+      top: 90px;
+      bottom: 90px;
+      animation-delay: 0.7s;
+    }
+    .wave span:nth-child(11){
+      right: 100px;
+      left: 100px;
+      top: 100px;
+      bottom: 100px;
+      animation-delay: 0.6s;
+    }
+    .wave span:nth-child(12){
+      right: 110px;
+      left: 110px;
+      top: 110px;
+      bottom: 110px;
+      animation-delay: 0.5s;
+    }
+    .wave span:nth-child(13){
+      right: 120px;
+      left: 120px;
+      top: 120px;
+      bottom: 120px;
+      animation-delay: 0.4s;
+    }
+    .wave span:nth-child(14){
+      right: 130px;
+      left: 130px;
+      top: 130px;
+      bottom: 130px;
+      animation-delay: 0.3s;
+    }
+    .wave span:nth-child(15){
+      right: 140px;
+      left: 140px;
+      top: 140px;
+      bottom: 140px;
+      animation-delay: 0.2s;
+    }
+    .wave span:nth-child(16){
+      right: 147px;
+      left: 147px;
+      bottom: 150px;
+      top: 150px;
+      animation-delay: 0.1s;
+    }
+  </style>
+</head>
+<body>
+
+
+<body>
+<div class="wave">
+  <span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span>
+</div>
+</body>
+</html>
+<!--blue-->
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--  <style>-->
+
+
+<!--    *{-->
+<!--      margin: 0;-->
+<!--      padding: 0;-->
+<!--    }-->
+<!--    body{-->
+<!--      display: flex;-->
+<!--      justify-content: center;-->
+<!--      align-items: center;-->
+<!--      min-height: 100vh;-->
+<!--      background: repeating-radial-gradient(ellipse farthest-corner at center center, #008bff 99%, #007bff 100%, rgba(0, 187, 255, 0.46) 99%);-->
+<!--    }-->
+
+<!--    .wave{-->
+<!--      height: 40vw;-->
+<!--      width: 100vw;-->
+<!--      transform-style: preserve-3d;-->
+<!--      transform: perspective(40vw) rotateX(deg);-->
+<!--    }-->
+
+<!--    .wave span {-->
+<!--      position: absolute;-->
+<!--      display: block;-->
+<!--      border: 30px solid transparent;-->
+<!--      background: repeating-radial-gradient(ellipse farthest-corner at center center, #008bff 99%, #007bff 100%, rgba(0, 187, 255, 0.46) 99%);-->
+<!--      border-image-slice: 10;-->
+<!--      border-radius: 200%;-->
+<!--      box-shadow: 0 2px 0 rgba(255, 68, 0, 0.25), 0 2px 0 rgba(255, 255, 0, 0.37),0 2px 0 rgba(255, 153, 0, 0.29);-->
+<!--      animation: animate 5s ease-in-out infinite;-->
+<!--      filter: blur(1px);-->
+<!--    }-->
+
+
+
+<!--    @keyframes animate {-->
+<!--      0%,100%{-->
+<!--        transform:translateZ(100px);-->
+<!--      }-->
+<!--      50%{-->
+<!--        transform: translateZ(-100px);-->
+<!--      }-->
+<!--    }-->
+<!--    .wave span:nth-child(1){-->
+<!--      right: 15px;-->
+<!--      left: 15px;-->
+<!--      top: 15px;-->
+<!--      bottom: 15px;-->
+<!--      animation-delay: 1.6s;-->
+<!--    }-->
+<!--    .wave span:nth-child(2){-->
+<!--      right: 10px;-->
+<!--      left: 10px;-->
+<!--      top: 10px;-->
+<!--      bottom: 10px;-->
+<!--      animation-delay: 1.5s;-->
+<!--    }-->
+<!--    .wave span:nth-child(3){-->
+<!--      right: 20px;-->
+<!--      left: 20px;-->
+<!--      top: 20px;-->
+<!--      bottom: 20px;-->
+<!--      animation-delay: 1.4s;-->
+<!--    }-->
+<!--    .wave span:nth-child(4){-->
+<!--      right: 30px;-->
+<!--      left: 30px;-->
+<!--      top: 30px;-->
+<!--      bottom: 30px;-->
+<!--      animation-delay: 1.3s;-->
+<!--    }-->
+<!--    .wave span:nth-child(5){-->
+<!--      right: 40px;-->
+<!--      left: 40px;-->
+<!--      top: 40px;-->
+<!--      bottom: 40px;-->
+<!--      animation-delay: 1.2s;-->
+<!--    }-->
+<!--    .wave span:nth-child(6){-->
+<!--      right: 50px;-->
+<!--      left: 50px;-->
+<!--      top: 50px;-->
+<!--      bottom: 50px;-->
+<!--      animation-delay: 1.1s;-->
+<!--    }-->
+<!--    .wave span:nth-child(7){-->
+<!--      right: 60px;-->
+<!--      left: 60px;-->
+<!--      top: 60px;-->
+<!--      bottom: 60px;-->
+<!--      animation-delay: 1s;-->
+<!--    }-->
+<!--    .wave span:nth-child(8){-->
+<!--      right: 70px;-->
+<!--      left: 70px;-->
+<!--      top: 70px;-->
+<!--      bottom: 70px;-->
+<!--      animation-delay: 0.9s;-->
+<!--    }-->
+<!--    .wave span:nth-child(9){-->
+<!--      right: 80px;-->
+<!--      left: 80px;-->
+<!--      top: 80px;-->
+<!--      bottom: 80px;-->
+<!--      animation-delay: 0.8s;-->
+<!--    }-->
+<!--    .wave span:nth-child(10){-->
+<!--      right: 90px;-->
+<!--      left: 90px;-->
+<!--      top: 90px;-->
+<!--      bottom: 90px;-->
+<!--      animation-delay: 0.7s;-->
+<!--    }-->
+<!--    .wave span:nth-child(11){-->
+<!--      right: 100px;-->
+<!--      left: 100px;-->
+<!--      top: 100px;-->
+<!--      bottom: 100px;-->
+<!--      animation-delay: 0.6s;-->
+<!--    }-->
+<!--    .wave span:nth-child(12){-->
+<!--      right: 110px;-->
+<!--      left: 110px;-->
+<!--      top: 110px;-->
+<!--      bottom: 110px;-->
+<!--      animation-delay: 0.5s;-->
+<!--    }-->
+<!--    .wave span:nth-child(13){-->
+<!--      right: 120px;-->
+<!--      left: 120px;-->
+<!--      top: 120px;-->
+<!--      bottom: 120px;-->
+<!--      animation-delay: 0.4s;-->
+<!--    }-->
+<!--    .wave span:nth-child(14){-->
+<!--      right: 130px;-->
+<!--      left: 130px;-->
+<!--      top: 130px;-->
+<!--      bottom: 130px;-->
+<!--      animation-delay: 0.3s;-->
+<!--    }-->
+<!--    .wave span:nth-child(15){-->
+<!--      right: 140px;-->
+<!--      left: 140px;-->
+<!--      top: 140px;-->
+<!--      bottom: 140px;-->
+<!--      animation-delay: 0.2s;-->
+<!--    }-->
+<!--    .wave span:nth-child(16){-->
+<!--      right: 147px;-->
+<!--      left: 147px;-->
+<!--      bottom: 150px;-->
+<!--      top: 150px;-->
+<!--      animation-delay: 0.1s;-->
+<!--    }-->
+<!--  </style>-->
+<!--</head>-->
+<!--<body>-->
+
+
+<!--<body>-->
+<!--<div class="wave">-->
+<!--  <span></span><span></span><span></span><span></span>-->
+<!--  <span></span><span></span><span></span><span></span>-->
+<!--  <span></span><span></span><span></span><span></span><span></span>-->
+
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+<!--hele pagina-->
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--  <style>-->
+
+
+<!--    *{-->
+<!--      margin: 0;-->
+<!--      padding: 0;-->
+<!--    }-->
+<!--    body{-->
+<!--      display: flex;-->
+<!--      justify-content: center;-->
+<!--      align-items: center;-->
+<!--      min-height: 100vh;-->
+<!--      background: rgb(235, 124, 176);-->
+<!--    }-->
+
+<!--    .wave{-->
+<!--      height: 300px;-->
+<!--      width: 300px;-->
+<!--      transform-style: preserve-3d;-->
+<!--      transform: perspective(100px) rotateX(45deg);-->
+<!--    }-->
+
+<!--    .wave span{-->
+<!--      position: absolute;-->
+<!--      display: block;-->
+<!--      border: 30px solid white;-->
+<!--      border-radius: 100%;-->
+<!--      box-shadow: 0 10px 0 rgba(245, 245, 245, 0.39);-->
+<!--      animation: animate 3s ease-in-out infinite;-->
+<!--    }-->
+<!--    @keyframes animate {-->
+<!--      0%,100%{-->
+<!--        transform:translateZ(100px);-->
+<!--      }-->
+<!--      50%{-->
+<!--        transform: translateZ(-100px);-->
+<!--      }-->
+<!--    }-->
+<!--    .wave span:nth-child(1){-->
+<!--      right: 0;-->
+<!--      left: 0;-->
+<!--      top: 0;-->
+<!--      bottom: 0;-->
+<!--      animation-delay: 1.6s;-->
+<!--    }-->
+<!--    .wave span:nth-child(2){-->
+<!--      right: 10px;-->
+<!--      left: 10px;-->
+<!--      top: 10px;-->
+<!--      bottom: 10px;-->
+<!--      animation-delay: 1.5s;-->
+<!--    }-->
+<!--    .wave span:nth-child(3){-->
+<!--      right: 20px;-->
+<!--      left: 20px;-->
+<!--      top: 20px;-->
+<!--      bottom: 20px;-->
+<!--      animation-delay: 1.4s;-->
+<!--    }-->
+<!--    .wave span:nth-child(4){-->
+<!--      right: 30px;-->
+<!--      left: 30px;-->
+<!--      top: 30px;-->
+<!--      bottom: 30px;-->
+<!--      animation-delay: 1.3s;-->
+<!--    }-->
+<!--    .wave span:nth-child(5){-->
+<!--      right: 40px;-->
+<!--      left: 40px;-->
+<!--      top: 40px;-->
+<!--      bottom: 40px;-->
+<!--      animation-delay: 1.2s;-->
+<!--    }-->
+<!--    .wave span:nth-child(6){-->
+<!--      right: 50px;-->
+<!--      left: 50px;-->
+<!--      top: 50px;-->
+<!--      bottom: 50px;-->
+<!--      animation-delay: 1.1s;-->
+<!--    }-->
+<!--    .wave span:nth-child(7){-->
+<!--      right: 60px;-->
+<!--      left: 60px;-->
+<!--      top: 60px;-->
+<!--      bottom: 60px;-->
+<!--      animation-delay: 1s;-->
+<!--    }-->
+<!--    .wave span:nth-child(8){-->
+<!--      right: 70px;-->
+<!--      left: 70px;-->
+<!--      top: 70px;-->
+<!--      bottom: 70px;-->
+<!--      animation-delay: 0.9s;-->
+<!--    }-->
+<!--    .wave span:nth-child(9){-->
+<!--      right: 80px;-->
+<!--      left: 80px;-->
+<!--      top: 80px;-->
+<!--      bottom: 80px;-->
+<!--      animation-delay: 0.8s;-->
+<!--    }-->
+<!--    .wave span:nth-child(10){-->
+<!--      right: 90px;-->
+<!--      left: 90px;-->
+<!--      top: 90px;-->
+<!--      bottom: 90px;-->
+<!--      animation-delay: 0.7s;-->
+<!--    }-->
+<!--    .wave span:nth-child(11){-->
+<!--      right: 100px;-->
+<!--      left: 100px;-->
+<!--      top: 100px;-->
+<!--      bottom: 100px;-->
+<!--      animation-delay: 0.6s;-->
+<!--    }-->
+<!--    .wave span:nth-child(12){-->
+<!--      right: 110px;-->
+<!--      left: 110px;-->
+<!--      top: 110px;-->
+<!--      bottom: 110px;-->
+<!--      animation-delay: 0.5s;-->
+<!--    }-->
+<!--    .wave span:nth-child(13){-->
+<!--      right: 120px;-->
+<!--      left: 120px;-->
+<!--      top: 120px;-->
+<!--      bottom: 120px;-->
+<!--      animation-delay: 0.4s;-->
+<!--    }-->
+<!--    .wave span:nth-child(14){-->
+<!--      right: 130px;-->
+<!--      left: 130px;-->
+<!--      top: 130px;-->
+<!--      bottom: 130px;-->
+<!--      animation-delay: 0.3s;-->
+<!--    }-->
+<!--    .wave span:nth-child(15){-->
+<!--      right: 140px;-->
+<!--      left: 140px;-->
+<!--      top: 140px;-->
+<!--      bottom: 140px;-->
+<!--      animation-delay: 0.2s;-->
+<!--    }-->
+<!--    .wave span:nth-child(16){-->
+<!--      right: 147px;-->
+<!--      left: 147px;-->
+<!--      bottom: 150px;-->
+<!--      top: 150px;-->
+<!--      animation-delay: 0.1s;-->
+<!--    }-->
+<!--  </style>-->
+<!--</head>-->
+<!--<body>-->
+
+
+<!--<body>-->
+<!--<div class="wave">-->
+<!--  <span></span><span></span><span></span><span></span>-->
+<!--  <span></span><span></span><span></span><span></span>-->
+<!--  <span></span><span></span><span></span><span></span><span></span>-->
+
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--  <style>-->
+
+
+<!--    *{-->
+<!--      margin: 0;-->
+<!--      padding: 0;-->
+<!--    }-->
+<!--    body{-->
+<!--      display: flex;-->
+<!--      justify-content: center;-->
+<!--      align-items: center;-->
+<!--      min-height: 100vh;-->
+<!--      background: rgb(235, 124, 176);-->
+<!--    }-->
+
+<!--    .wave{-->
+<!--      height: 270px;-->
+<!--      width: 270px;-->
+<!--      transform-style: preserve-3d;-->
+<!--      transform: perspective(300px) rotateX(20deg);-->
+<!--    }-->
+
+<!--    .wave span{-->
+<!--      position: absolute;-->
+<!--      display: block;-->
+<!--      border: 20px solid white;-->
+<!--      border-radius: 100%;-->
+<!--      box-shadow: 0 10px 0 whitesmoke;-->
+<!--      animation: animate 3s ease-in-out infinite;-->
+<!--    }-->
+<!--    @keyframes animate {-->
+<!--      0%,100%{-->
+<!--        transform:translateZ(-100px);-->
+<!--      }-->
+<!--      50%{-->
+<!--        transform: translateZ(100px);-->
+<!--      }-->
+<!--    }-->
+
+<!--    .wave span:nth-child(1){-->
+<!--      right: 0;-->
+<!--      left: 0;-->
+<!--      top: 0;-->
+<!--      bottom: 0;-->
+<!--      animation-delay: 1.6s;-->
+<!--    }-->
+<!--    .wave span:nth-child(2){-->
+<!--      right: 10px;-->
+<!--      left: 10px;-->
+<!--      top: 10px;-->
+<!--      bottom: 10px;-->
+<!--      animation-delay: 1.5s;-->
+<!--    }-->
+<!--    .wave span:nth-child(3){-->
+<!--      right: 20px;-->
+<!--      left: 20px;-->
+<!--      top: 20px;-->
+<!--      bottom: 20px;-->
+<!--      animation-delay: 1.4s;-->
+<!--    }-->
+<!--    .wave span:nth-child(4){-->
+<!--      right: 30px;-->
+<!--      left: 30px;-->
+<!--      top: 30px;-->
+<!--      bottom: 30px;-->
+<!--      animation-delay: 1.3s;-->
+<!--    }-->
+<!--    .wave span:nth-child(5){-->
+<!--      right: 40px;-->
+<!--      left: 40px;-->
+<!--      top: 40px;-->
+<!--      bottom: 40px;-->
+<!--      animation-delay: 1.2s;-->
+<!--    }-->
+<!--    .wave span:nth-child(6){-->
+<!--      right: 50px;-->
+<!--      left: 50px;-->
+<!--      top: 50px;-->
+<!--      bottom: 50px;-->
+<!--      animation-delay: 1.1s;-->
+<!--    }-->
+<!--    .wave span:nth-child(7){-->
+<!--      right: 60px;-->
+<!--      left: 60px;-->
+<!--      top: 60px;-->
+<!--      bottom: 60px;-->
+<!--      animation-delay: 1s;-->
+<!--    }-->
+<!--    .wave span:nth-child(8){-->
+<!--      right: 70px;-->
+<!--      left: 70px;-->
+<!--      top: 70px;-->
+<!--      bottom: 70px;-->
+<!--      animation-delay: 0.9s;-->
+<!--    }-->
+<!--    .wave span:nth-child(9){-->
+<!--      right: 80px;-->
+<!--      left: 80px;-->
+<!--      top: 80px;-->
+<!--      bottom: 80px;-->
+<!--      animation-delay: 0.8s;-->
+<!--    }-->
+<!--    .wave span:nth-child(10){-->
+<!--      right: 90px;-->
+<!--      left: 90px;-->
+<!--      top: 90px;-->
+<!--      bottom: 90px;-->
+<!--      animation-delay: 0.7s;-->
+<!--    }-->
+<!--    .wave span:nth-child(11){-->
+<!--      right: 100px;-->
+<!--      left: 100px;-->
+<!--      top: 100px;-->
+<!--      bottom: 100px;-->
+<!--      animation-delay: 0.6s;-->
+<!--    }-->
+<!--    .wave span:nth-child(12){-->
+<!--      right: 110px;-->
+<!--      left: 110px;-->
+<!--      top: 110px;-->
+<!--      bottom: 110px;-->
+<!--      animation-delay: 0.5s;-->
+<!--    }-->
+<!--    .wave span:nth-child(13){-->
+<!--      right: 120px;-->
+<!--      left: 120px;-->
+<!--      top: 120px;-->
+<!--      bottom: 120px;-->
+<!--      animation-delay: 0.4s;-->
+<!--    }-->
+<!--    .wave span:nth-child(14){-->
+<!--      right: 130px;-->
+<!--      left: 130px;-->
+<!--      top: 130px;-->
+<!--      bottom: 130px;-->
+<!--      animation-delay: 0.3s;-->
+<!--    }-->
+<!--    .wave span:nth-child(15){-->
+<!--      right: 140px;-->
+<!--      left: 140px;-->
+<!--      top: 140px;-->
+<!--      bottom: 140px;-->
+<!--      animation-delay: 0.2s;-->
+<!--    }-->
+<!--    .wave span:nth-child(16){-->
+<!--      right: 147px;-->
+<!--      left: 147px;-->
+<!--      bottom: 150px;-->
+<!--      top: 150px;-->
+<!--      animation-delay: 0.1s;-->
+<!--    }-->
+<!--  </style>-->
+<!--</head>-->
+<!--<body>-->
+
+
+<!--<body>-->
+<!--<div class="wave">-->
+<!--  <span></span><span></span><span></span><span></span>-->
+<!--  <span></span><span></span><span></span><span></span>-->
+<!--  <span></span><span></span><span></span><span></span>-->
+<!--  <span></span><span></span><span></span><span></span>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+
